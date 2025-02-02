@@ -1,0 +1,145 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rps-game {
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: pink; */
+}
+
+.top {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: blue; */
+    
+}
+
+.top h1{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+.top p{
+     font-family: "Poppins", sans-serif;
+     color: rgb(114, 114, 226);
+     font-weight: bold;
+}
+
+.top .score {
+    color: rgb(113, 177, 113);
+}
+.player-score {
+    color: rgb(114, 114, 226);
+}
+
+.bot-score{
+    color: black;
+}
+.items {
+    display: flex;  
+    height: 60%;
+    align-items: center;
+    /* position: relative */
+
+
+}
+.items .item{
+    width: 100px;
+    height: 90px;
+    margin: 10px;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+    box-shadow: 2px 2px 14px 2px blue;
+    transition: bottom 0.8s ;
+    /* background-color:blue; */
+    background-color: rgb(102, 102, 193);
+
+}
+
+.item img{
+    height: 80px;
+    width: 100%;
+}
+
+.items .item:hover{
+    position: relative;
+    transition: 0.5s;
+    bottom: 20px;
+    background-color: #6f6f8c;
+}
+.items .item:active{
+    background-color: transparent;
+    bottom: 0px;
+
+}
+
+.bottom{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom .restart {
+    padding: 10px 40px;
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover{
+        background-color: rgb(0, 0, 0, 0.8);
+    }
+    &:active{
+        background-color: rgb(0, 19, 40);
+    }
+
+}
+
+.bottom p {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(113, 177, 113);
+}
+.bot-chose{
+    color: black
+}
+
+@media (max-width : 500px){
+    .items{
+        flex-direction: column;
+        margin: 40px 0px;
+        
+
+    }
+}
